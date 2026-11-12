@@ -1,0 +1,238 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD and Triggers" id="wfw1">
+    <mxGraphModel dx="1334" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=18;fontColor=#1F2328;fontStyle=1;" value="WildfireWatch Rwanda: Planned ERD and Triggers" vertex="1">
+          <mxGeometry height="30" width="700" x="40" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;fontColor=#5C6670;" value="Draft for Phase 0. Columns are provisional and will be normalised to 3NF in Phase II. Ranger posts and park boundaries are simulated reference data." vertex="1">
+          <mxGeometry height="20" width="900" x="40" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="DISTRICT" vertex="1">
+          <mxGeometry height="136" width="210" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK district_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="province" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="centre_lat" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="centre_lon" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="PROTECTED_AREA" vertex="1">
+          <mxGeometry height="114" width="210" x="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="c10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK area_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="c10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="c10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="area_type" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="c10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK district_id" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="RANGER_POST" vertex="1">
+          <mxGeometry height="158" width="210" x="560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK post_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="name" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="latitude" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="longitude" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK area_id" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="c15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK district_id" vertex="1">
+          <mxGeometry height="22" width="210" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="RANGER" vertex="1">
+          <mxGeometry height="92" width="210" x="820" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="c22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK ranger_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="c22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="full_name" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="c22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK post_id" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="HOTSPOT_DETECTION" vertex="1">
+          <mxGeometry height="290" width="210" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK hotspot_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="latitude" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="longitude" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="acq_date" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="acq_time" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="brightness" vertex="1">
+          <mxGeometry height="22" width="210" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="confidence (0-100)" vertex="1">
+          <mxGeometry height="22" width="210" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="frp" vertex="1">
+          <mxGeometry height="22" width="210" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="satellite" vertex="1">
+          <mxGeometry height="22" width="210" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="daynight" vertex="1">
+          <mxGeometry height="22" width="210" y="224" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK district_id" vertex="1">
+          <mxGeometry height="22" width="210" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="c26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK area_id" vertex="1">
+          <mxGeometry height="22" width="210" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="FIRE_ALERT" vertex="1">
+          <mxGeometry height="158" width="210" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK alert_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK hotspot_id" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="risk_level" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="status" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="opened_at" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="c39" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="closed_at" vertex="1">
+          <mxGeometry height="22" width="210" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E4572E;fontColor=#FFFFFF;strokeColor=#E4572E;swimlaneFillColor=#FFE8DD;fontSize=12;" value="ALERT_RESPONSE" vertex="1">
+          <mxGeometry height="158" width="210" x="560" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK response_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK alert_id" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK post_id" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="FK ranger_id" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="arrival_time" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" parent="c46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="outcome" vertex="1">
+          <mxGeometry height="22" width="210" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#5C6670;fontColor=#FFFFFF;strokeColor=#5C6670;swimlaneFillColor=#E8EDF2;fontSize=12;" value="AUDIT_LOG" vertex="1">
+          <mxGeometry height="202" width="210" x="820" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;fontStyle=1;" value="PK log_id" vertex="1">
+          <mxGeometry height="22" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="table_name" vertex="1">
+          <mxGeometry height="22" width="210" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="action" vertex="1">
+          <mxGeometry height="22" width="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="record_id" vertex="1">
+          <mxGeometry height="22" width="210" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="old_value" vertex="1">
+          <mxGeometry height="22" width="210" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="new_value" vertex="1">
+          <mxGeometry height="22" width="210" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="changed_by" vertex="1">
+          <mxGeometry height="22" width="210" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" parent="c53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;fontSize=11;" value="changed_at" vertex="1">
+          <mxGeometry height="22" width="210" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" edge="1" parent="1" source="c10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" edge="1" parent="1" source="c15" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c66" edge="1" parent="1" source="c26" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c67" edge="1" parent="1" source="c39" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c68" edge="1" parent="1" source="c15" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c69" edge="1" parent="1" source="c22" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;endArrow=ERmany;startArrow=ERmandOne;endFill=0;startFill=0;strokeWidth=1.5;" target="c46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c70" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=14;fontColor=#B07A00;fontStyle=1;" value="TRIGGERS" vertex="1">
+          <mxGeometry height="20" width="200" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="c71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6A100;strokeWidth=2;" value="&lt;b&gt;trg_validate_hotspot&lt;/b&gt;&lt;br/&gt;BEFORE INSERT OR UPDATE on HOTSPOT_DETECTION&lt;br/&gt;Rejects coordinates outside Rwanda or confidence outside 0-100.&lt;br/&gt;Raises: invalid location exception." vertex="1">
+          <mxGeometry height="120" width="300" x="40" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="c72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6A100;strokeWidth=2;" value="&lt;b&gt;trg_block_close_no_response&lt;/b&gt;&lt;br/&gt;BEFORE UPDATE on FIRE_ALERT&lt;br/&gt;Blocks setting status to CLOSED when the alert has no row in ALERT_RESPONSE." vertex="1">
+          <mxGeometry height="120" width="300" x="370" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="c73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=11;fillColor=#E8EDF2;strokeColor=#5C6670;strokeWidth=2;" value="&lt;b&gt;trg_audit_log&lt;/b&gt;&lt;br/&gt;AFTER INSERT, UPDATE, DELETE on HOTSPOT_DETECTION, FIRE_ALERT and ALERT_RESPONSE&lt;br/&gt;Writes table, action, record, old and new values, user and time to AUDIT_LOG." vertex="1">
+          <mxGeometry height="120" width="320" x="700" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" edge="1" parent="1" source="c71" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#D6A100;fontSize=10;dashed=1;endArrow=block;endFill=1;strokeWidth=2;" target="c26" value="guards">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" edge="1" parent="1" source="c72" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#D6A100;fontSize=10;dashed=1;endArrow=block;endFill=1;strokeWidth=2;" target="c39" value="guards">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c76" edge="1" parent="1" source="c73" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5C6670;fontSize=10;dashed=1;endArrow=block;endFill=1;strokeWidth=2;" target="c53" value="writes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;fontColor=#5C6670;" value="Other rules (procedures, not triggers): load_hotspots raises duplicate detection; open_alert raises unassigned post when no ranger post is found." vertex="1">
+          <mxGeometry height="30" width="980" x="40" y="810" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
